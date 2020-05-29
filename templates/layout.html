@@ -1,0 +1,67 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Maze development!" />
+    <meta name="keywords" content="mazedev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazedev | {% if title %}{{ title }}{% endif %}</title>
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">   
+    <script src="https://kit.fontawesome.com/9bd2d4d6fe.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/6a8b148e8b.js"></script>
+</head>
+
+{% block head %}
+
+{% endblock %}
+
+<body>
+    <span id="top"></span>
+    <header>
+        <div class="logo">
+            <a class="logotext" href="index.html">MAZEDEV.COM</a>
+        </div>
+
+        <div class="login">
+            <a class="loginbtn" href="#">LOGIN</a>
+        </div>
+
+    </header>
+    <nav>
+        <div class="topnav">
+            <a class="active" href="/">HOME</a>
+            <a href="/portfolio">PORTFOLIO</a>
+            <a href="/contact">CONTACT</a>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <div class="footer-box">
+
+            <div class="copyright">
+                © Dominik Dul, 2020. All rights reserved.
+            </div>
+            <div class="social-box">
+                <div class="checksocial">
+                    follow me here
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/Mazzdev" class="fab fa-github" target="_blank"></a>
+                    <a href="https://www.instagram.com/dominikk.dul" class="fab fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
