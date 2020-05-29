@@ -53,6 +53,7 @@ header {
     -moz-box-shadow: 0px 6px 5px 0px rgba(214, 210, 214, 1);
     box-shadow: 0px 6px 5px 0px rgba(214, 210, 214, 1);
     color: white;
+    z-index: 1;
 }
 
 .login {
@@ -91,13 +92,9 @@ header {
 .topnav {
     background-color: #8B8B8B;
     height: 50px;
-    overflow: hidden;
     color: #000;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
     text-align: center;
-    position: sticky;
-    top: 0;
     -webkit-box-shadow: 0px 6px 10px 0px rgba(199, 199, 199, 1);
     -moz-box-shadow: 0px 6px 10px 0px rgba(199, 199, 199, 1);
     box-shadow: 0px 6px 10px 0px rgba(199, 199, 199, 1);
@@ -187,6 +184,7 @@ header {
     letter-spacing: 1px;
     font-weight: 400;
     margin-right: 50px;
+    font-size: 19px;
 }
 
 hr {
@@ -214,18 +212,18 @@ footer {
 }
 
 .copyright {
-    height: 100px;
+    height: 80px;
     line-height: 120px;
     font-weight: 600;
     font-size: 17px;
-    width: 600px;
+    width: 400px;
     float: left;
 }
 
 .social-box {
-    float: left;
+    float: right;
     height: 120px;
-    width: 600px;
+    width: 400px;
     text-align: center;
 }
 
@@ -245,7 +243,7 @@ footer {
 .social-icons a {
     color: #636363;
     text-decoration: none;
-    transition: 500ms;
+    transition: 200ms;
     padding: 5px;
 }
 
@@ -260,4 +258,39 @@ footer {
 
 .social-icons a:last-child {
     margin-left: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 37px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.illdosth {
+    text-align: center;
+    font-size: 25;
+    margin-top: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
+.link {
+    color: #00bce9;
+    text-decoration: none;
+}
+
+.fastnav {
+    width: 100%;
+    text-align: center;
+    line-height: 120px;
+    color: #00bce9;
+    text-decoration: none;
+}
+
+.fastnav a {
+    margin-left: 40px;
+    color: #00bce9;
+    text-decoration: none;
 }
