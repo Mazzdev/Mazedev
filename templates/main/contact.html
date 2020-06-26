@@ -7,10 +7,13 @@
 
 {% block content %}
 
-<div class="container">
-    <h1 class="subtitle">Contact</h1>
-    <hr>
-    <h2 class="illdosth">tu będzie formularz kontatkowy</h2>
-</div>
+<h1>Contact Us</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
 
 {% endblock %}
