@@ -6,14 +6,20 @@
 {% endblock %}
 
 {% block content %}
-
-<h1>Contact Us</h1>
+<div class="container">
+<h1 class="subtitle">Get in touch</h1>
+<hr>
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form.from_email}}
+    <br>
+    {{ form.subject}}
+    <br>
+    {{ form.message}}
     <div class="form-actions">
-      <button type="submit">Send</button>
+        <button type="submit">Send</button>
     </div>
 </form>
+</div>
 
 {% endblock %}
