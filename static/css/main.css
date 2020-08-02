@@ -89,7 +89,7 @@ header {
     background-size: 4px 30px;
 }
 
-.topnav {
+#topnav {
     background-color: #8B8B8B;
     height: 50px;
     color: #000;
@@ -100,7 +100,7 @@ header {
     box-shadow: 0px 6px 10px 0px rgba(199, 199, 199, 1);
 }
 
-.topnav a {
+#topnav a {
     color: #000;
     line-height: 50px;
     text-decoration: none;
@@ -117,15 +117,15 @@ header {
     padding: 9px;
 }
 
-.topnav a:hover {
+#topnav a:hover {
     color: #000;
 }
 
-.topnav a.active {
+#topnav a.active {
     color: #000;
 }
 
-.topnav a:after {
+#topnav a:after {
     content: "";
     position: absolute;
     height: 2px;
@@ -140,7 +140,7 @@ header {
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 
-.topnav a:hover:after {
+#topnav a:hover:after {
     width: 100%;
 }
 
@@ -331,7 +331,6 @@ h3 {
     border: none;
     width: 400px;
     height: 50px;
-    margin-top: 40px;
     padding: 20px;
     border-bottom: 1px solid black;
 }
@@ -354,17 +353,17 @@ h3 {
 .message {
     display: block;
     margin: 0 auto;
-    text-align: center;
     margin-top: 20px;
     border-radius: 30px;
-    ;
     background-color: #e7e6e6;
     font-size: 15px;
     outline: none;
     border: none;
     width: 1000px;
     height: 200px;
-    padding: 20px;
+    padding: 30px;
+    padding-bottom: 50px;
+    resize: none;
 }
 
 .contactus {
@@ -391,3 +390,381 @@ button:hover {
     background: black;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        height: 60px;
+        margin: auto;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 100px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .logotext {
+        text-decoration: none;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        margin: auto;
+    }
+
+    header {
+        height: 100px;
+        width: 100%;
+        background-color: #1a1a1d;
+        -webkit-box-shadow: 0px 6px 5px 0px rgba(214, 210, 214, 1);
+        -moz-box-shadow: 0px 6px 5px 0px rgba(214, 210, 214, 1);
+        box-shadow: 0px 6px 5px 0px rgba(214, 210, 214, 1);
+        color: white;
+        z-index: 10;
+    }
+
+    .login {
+        float: right;
+        height: 30px;
+        line-height: 30px;
+        display: none;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15%;
+        color: white;
+    }
+
+    #topnav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        clear: both;
+    }
+
+    #topnav a {
+        color: #000;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        clear: both;
+        width: 100%;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #topnav a:first-child {
+        margin-top: 200px;
+    }
+
+    #topnav a:hover {}
+
+    #topnav a.active {}
+
+    #topnav a:after {}
+
+    #topnav a:hover:after {}
+
+
+    .about {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 325px;
+    }
+
+    .profile-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profileimg {
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        background-image: url(../img/profileimg.png);
+        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 19px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        margin-top: 50px;
+    }
+
+    footer {
+        clear: both;
+        width: 100%;
+        height: 240px;
+        background-color: #deddd9;
+        -webkit-box-shadow: 0px -4px 10px 0px rgba(199, 199, 199, 1);
+        -moz-box-shadow: 0px -4px 10px 0px rgba(199, 199, 199, 1);
+        box-shadow: 0px -4px 10px 0px rgba(199, 199, 199, 1);
+        font-family: 'Lato', sans-serif;
+        margin-top: 500px;
+    }
+
+    .footer-box {
+        height: 320px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #deddd9;
+    }
+
+    .copyright {
+        height: 90px;
+        line-height: 100px;
+        font-weight: 600;
+        font-size: 17px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .social-box {
+        float: right;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .checksocial {
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .social-icons a {
+        color: #636363;
+        text-decoration: none;
+        transition: 200ms;
+        padding: 5px;
+    }
+
+    .social-icons a:hover {
+        color: #694599;
+        font-size: 40px;
+    }
+
+    .social-icons a:first-child {
+        margin-right: 10px;
+    }
+
+    .social-icons a:last-child {
+        margin-left: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 37px;
+        letter-spacing: 2px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    .illdosth {
+        text-align: center;
+        font-size: 25;
+        margin-top: 100px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .link {
+        color: #00bce9;
+        text-decoration: none;
+    }
+
+    .fastnav {
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        color: #00bce9;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fastnav a {
+        margin-left: 0;
+        color: #00bce9;
+        text-decoration: none;
+        text-align: center;  
+        padding: 20px;
+    }
+
+
+    .backtomain {
+        color: #00bce9;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .email {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 40px;
+        background-color: white;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        width: 90%;
+        height: 50px;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .subject {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        background-color: white;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        width: 90%;
+        height: 50px;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .message {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 30px;
+        background-color: #e7e6e6;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        width: 90%;
+        height: 200px;
+        padding: 30px;
+        padding-bottom: 50px;
+        resize: none;
+    }
+
+    .contactus {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        outline: none !important;
+        border: none;
+        background: white;
+        margin-top: 30px;
+        width: 170px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+    }
+
+    .burgermenu {
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+        margin-top: 10px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
